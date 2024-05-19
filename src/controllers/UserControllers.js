@@ -124,7 +124,6 @@ class UsersController {
     
             // só executa o segundo if se o arquivo  de foto for passado
             if (avatarFileType) {
-                avatarFileType = avatarFileType.toLowerCase();
                 if(avatarFileType !== 'jpeg' && avatarFileType !== 'png' && avatarFileType !== 'jpg') {
                     throw new AppError("A foto precisa ser um arquivo nos formatos válidos.")
                 };
